@@ -18,6 +18,7 @@ return {
         "jsonls",
         "tailwindcss",
         "ts_ls",
+        "zls",
       },
     },
   },
