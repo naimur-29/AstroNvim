@@ -19,7 +19,8 @@
 --
 -- NEOVIDE CONFIG
 if vim.g.neovide then
-  vim.g.neovide_cursor_vfx_mode = "ripple"
+  vim.g.neovide_cursor_vfx_mode = "pixiedust"
+  vim.g.neovide_cursor_vfx_particle_density = 3.0
 
   -- Remap Ctrl+Shift+H/J/K/L for window navigation
   vim.keymap.set("n", "<C-S-h>", "<C-w>h", { desc = "Move to left window" })
@@ -28,9 +29,9 @@ if vim.g.neovide then
   vim.keymap.set("n", "<C-S-l>", "<C-w>l", { desc = "Move to right window" })
 
   -- Set Neovide-specific GUI settings
-  -- vim.g.neovide_transparency = 0.9
+  vim.g.neovide_opacity = 0.8
   vim.g.neovide_fps = 120 -- Set FPS for Neovide (default is 60)
   -- vim.g.neovide_fullscreen = false -- Disable fullscreen by default
 end
 
-if vim.g.codeum then vim.g.codeium_gzip_path = "C:\\Program Files\\Git\\usr\\bin\\gzip.exe" end
+-- if vim.g.codeum then vim.g.codeium_gzip_path = "C:\\Program Files\\Git\\usr\\bin\\gzip.exe" end
